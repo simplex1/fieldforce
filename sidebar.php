@@ -7,7 +7,9 @@
         
     -->
        <?php          
-        $file = basename($_SERVER['REQUEST_URI']);                               
+        $file = basename($_SERVER['REQUEST_URI']);  
+        $modules = $_SESSION['modules'];
+        $mod_arr = explode('|',$modules);                                     
        ?>
     	<div class="sidebar-wrapper">
             <div class="logo">
@@ -17,49 +19,18 @@
             </div>
                        
             <ul class="nav">
-                <li class="<?php echo $file=='admin.php'?'active':'';?>">
-                    <a href="admin.php">
-                        <i class="pe-7s-graph"></i> 
-                        <p>Dashboard</p>
+                <?php 
+                 for($a=0;$a<count($mod_arr);$a++){
+                 list($mod_id,$mod_name,$mod_file,$mod_icon) = explode(':',$mod_arr[$a]);
+                 $active = ($file==$mod_file)?'active':'';
+                ?>
+                <li class="<?php echo $active;?>">
+                    <a href="<?php echo $mod_file;?>">
+                        <i class="<?php echo $mod_icon;?>"></i> 
+                        <p><?php echo $mod_name;?></p>
                     </a>            
                 </li>
-                <li class="<?php echo $file=='employee.php'?'active':'';?>">
-                    <a href="employee.php">
-                        <i class="pe-7s-user"></i> 
-                        <p>Employee</p>
-                    </a>
-                </li> 
-                <li class="<?php echo $file=='customer.php'?'active':'';?>">
-                    <a href="customer.php">
-                        <i class="pe-7s-map-marker"></i> 
-                        <p>Customer</p>
-                    </a>        
-                </li>                
-                <li class="<?php echo $file=='sales_rep_bin.php'?'active':'';?>">
-                    <a href="sales_rep_bin.php">
-                        <i class="pe-7s-note2"></i> 
-                        <p>Sales Rep Bin</p>
-                    </a>        
-                </li>
-                <!--
-                <li>
-                    <a href="typography.html">
-                        <i class="pe-7s-news-paper"></i> 
-                        <p>Typography</p>
-                    </a>        
-                </li>
-                <li>
-                    <a href="icons.html">
-                        <i class="pe-7s-science"></i> 
-                        <p>Icons</p>
-                    </a>        
-                </li>                
-                <li>
-                    <a href="notifications.html">
-                        <i class="pe-7s-bell"></i> 
-                        <p>Notifications</p>
-                    </a>        
-                </li>-->
+                <?php } ?>                
             </ul> 
     	</div>
       </div>    

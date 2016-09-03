@@ -225,8 +225,8 @@ input:focus {
 .sidebar .sidebar-wrapper {
   position: relative;
   max-height: none;
-  min-height: 100%;
-  overflow: hidden;
+  height: 100%;  
+  overflow: auto;
   width: 260px;
   z-index: 4;
 }

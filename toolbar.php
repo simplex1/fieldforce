@@ -40,13 +40,13 @@
                                     <b class="caret"></b>
                               </a>
                               <ul class="dropdown-menu">
-                                <li><a href="javascript:demo.startDay();">Start Day</a></li>                                
+                                <!--li><a href="javascript:demo.startDay();">Start Day</a></li>                                
                                 <li class="divider"></li>                                
                                 <li><a href="settings.php">Settings</a></li>                                
-                                <li class="divider"></li>
+                                <li class="divider"></li-->
                                 <li><a href="profile.php">My Profile</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Report</a></li>
+                                <!--li class="divider"></li>
+                                <li><a href="#">Report</a></li-->
                               </ul>
                         </li>
                         <li>
