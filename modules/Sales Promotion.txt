@@ -1,0 +1,55 @@
+Top Selling Deals/Promotions/Offers Extension. Everything you need to run any type of Deals/Promotions/Offers on your Opencart web store. We made it really easy to boost-up your Sales!!
+
+Sales Promotions Features 
+✔ Compatible with Opencart 2.0x (Latest Versions)
+✔ Deals/Offers Listing Page
+✔ Deals/Offers Details Page Page
+✔ Options to add deals image, banner, description and terms-conditions
+✔ Buy One Get One Free (BOGOF)
+✔ Buy Three Get Two Free
+✔ Buy X Get Y Free
+✔ Buy X Get $Z Off
+✔ Buy X Get Z% Off
+✔ Buy X Get Y with $Z Off
+✔ Buy X Get Y With Z% Off
+✔ Buy X from Selected Products/Categories/Manufacturers Get Y Free
+✔ Buy X Get Shipping Free
+✔ Every Monday Get %10 Off
+✔ Every Saturday-Sunday Buy One Get One Off
+✔ Any type of combination using below options. 
+
+Advance Customization Options
+✔ Rules Based Promotions, Multiple Rules 
+✔ Discount Type Percentage/Fixed Amount/Fixed Product Price
+✔ Minimum Total Quantity-Quantity Range
+✔ Minimum Total Value- Value Range
+✔ Buy-Sale Product, Category, Manufacturer Selection
+✔ Product Option based Promotions
+✔ Exclude Special Products
+✔ Exclude Discounted Products
+✔ Exclude Discounted On Product Options
+✔ Works with Coupon
+✔ Starting Date- End Date
+✔ Uses per Sale
+✔ Uses per Customer
+✔ Uses per Combination
+✔ Free Shipping
+✔ Supports Multi-Store 
+✔ Customer Group
+✔ Currency
+✔ Language
+✔ Recurring/Days
+✔ Geo-Zones
+✔ Shipping Method
+✔ Payment Method
+✔ Discount on Tax
+✔ Discount on Base Price and Discounted Price
+
+Sales Promotions Deals (FREE) 
+✔ Dedicated Deals Listing Page
+✔ Individual Deals Page
+✔ Options to add deals image, banner, description and terms-conditions
+
+Sales Promotion Module (FREE) 
+✔ To display promotional products anywhere in your store with promotion details. 
+✔ Option to display Buy/Required Products or Products On Sale. 
