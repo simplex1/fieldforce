@@ -20,9 +20,11 @@
                        
             <ul class="nav">
                 <?php 
+                 $page_title = "";
                  for($a=0;$a<count($mod_arr);$a++){
                  list($mod_id,$mod_name,$mod_file,$mod_icon) = explode(':',$mod_arr[$a]);
                  $active = ($file==$mod_file)?'active':'';
+                 $page_title = ($file==$mod_file)?$mod_name:'Dashboard';
                 ?>
                 <li class="<?php echo $active;?>">
                     <a href="<?php echo $mod_file;?>">

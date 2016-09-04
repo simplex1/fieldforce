@@ -1,3 +1,10 @@
+<?php 
+                 $page_title = "";
+                 for($a=0;$a<count($mod_arr);$a++){
+                 list($mod_id,$mod_name,$mod_file,$mod_icon) = explode(':',$mod_arr[$a]);                 
+                 if($file==$mod_file){$page_title = $mod_name;break;};
+                 }
+                ?>
 <nav class="navbar navbar-default navbar-fixed">
             <div class="container-fluid">    
                 <div class="navbar-header">
@@ -7,7 +14,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Dashboard</a>
+                    <a class="navbar-brand" href="#"><?php echo $page_title;?></a>
                 </div>
                 <div class="collapse navbar-collapse">       
                     <ul class="nav navbar-nav navbar-left">

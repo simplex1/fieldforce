@@ -159,14 +159,15 @@ class Customer{
       return json_encode(array('result'=>$result));
  }
  
- function getCustomerList(){
+ function getCustomerList(){   
    $fields = array('customer_id','outlet_name','outlet_address','phone_no','email','first_name','last_name','dob','city','state','latitude','longitude','date_created');
+   $user_id = $_SESSION['user_id'];
    $start = 0;
    $qty = !empty($_REQUEST['search_qty'])?$_REQUEST['search_qty']:10;
-   $search_param = !empty($_REQUEST['search_param'])?$_REQUEST['search_param']:'';
+   $search_param = !empty($_REQUEST['search_param'])?$_REQUEST['search_param']:'';   
    $qry = "CALL customer_list(?,?,?)";
       $stmt = $this->db->con->prepare($qry);  
-      $stmt->bind_param('iis',$start,$qty,$search_param);                
+      $stmt->bind_param('iiis',$user_id,$start,$qty,$search_param);                
       $stmt->execute();      
       $stmt->bind_result($customer_id,$outlet_name,$outlet_address,$phone_no,$email,$first_name,$last_name,$dob,$city,$state,$latitude,$longitude,$date_created);
       $customers = array();         

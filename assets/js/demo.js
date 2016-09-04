@@ -118,18 +118,23 @@ demo = {
         }
         var map = new google.maps.Map(document.getElementById("map"), mapOptions);               
         
+        var bounds = new google.maps.LatLngBounds();      
         coords.customers.forEach(function(row){
         var latlng = new google.maps.LatLng(row.latitude,row.longitude);
           var marker = new google.maps.Marker({
             position: latlng,
             title: row.outlet_name,
-            draggable:true
-          });                
+            draggable:true,
+            center: latlng
+          }); 
+          bounds.extend(marker.getPosition());               
           marker.setMap(map);  
           marker.addListener('click', function() { 
            location.href = "customerEdit.php?search_qty=1&search_param="+row.customer_id;   
           });        
-        });                        
+        });                   
+        
+        map.fitBounds(bounds);     
    
     },
     
